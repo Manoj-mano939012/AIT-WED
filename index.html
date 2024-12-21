@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment</title>
+        <style type="text/css">
+            body{
+                margin: 0px;
+				overflow-x: hidden;
+            }
+            .container{
+                width: 100%;
+                height: auto;
+            }
+            .header{
+                display: flex;
+                flex-direction:row;
+                height: auto;
+                width: 100%;
+            }
+            .item{
+                background:black;
+                padding: 10px;
+                color: white;
+                flex: 1;
+            }
+            .item1{
+                background: black;
+                padding: 10px;
+                color: white;
+                flex: 2;
+            }
+            .nav ul{
+                display: flex;
+            }
+            .nav ul li{
+                width: 200px;
+                margin-top: 20px;
+				list-style-type: none;
+                font-family:calibri;
+            }
+            .nav ul li a{
+               text-decoration: none;
+               color: white;
+            }
+            .middle{
+			    border:1px solid black;
+                width:100%;
+                height:500px;
+				background-color:orange;
+			    background-image:url('./choose/achievers.png');
+            }
+			.middle-top{
+			  position:relative;
+			  top:250px;
+			  left:900px;
+			  padding:15px;
+			  border-radius:10px;
+			  color:white;
+			  font-family:calibri;
+              background-color:green;			  
+			}
+			.middle-middle{	
+              display:flex;
+			  position:relative;
+              margin-top:150px;			  
+			}
+			.img1{
+			background-color:white;
+			box-shadow:2px 2px gray;
+			padding:10px;
+			margin:50px 5px 50px 140px;
+			flex:1;
+			}
+			.img2{
+			background-color:white;
+			box-shadow:2px 2px;
+			padding:10px;
+			margin:50px 5px 50px 5px;
+			flex:1;
+			}
+		    .img3{
+			background-color:white;
+			box-shadow:2px 2px;
+			padding:10px;
+			margin:50px 90px 50px 5px;
+			flex:1;
+			}
+			/* .img8{
+			} */
+			.middle-left{
+			  width:100%px;
+			  height:350px;
+			  display:flex;
+			}
+			.item2{
+			border:1px solid black;
+			padding:0px;
+			margin:5px;
+			flex:1;
+			margin:0px 40px 20px 30px;
+			}
+			.child1{
+			background-image:linear-gradient(to right,red,orange);
+			padding:10px;
+			color:white;
+			
+			}
+			.child2{
+			border-bottom:1px solid black;
+			margin-top:20px;
+			}
+			.item3{
+			border:1px solid black;
+			padding:0px;
+			margin:5px;
+			flex:1;
+			margin:0px 20px 20px 30px;
+			}
+			.child4{
+			background-image:linear-gradient(to right,red,green);
+			padding:10px;
+			color:white;
+			}
+			.child5{
+			border-bottom:1px solid black;
+			margin-top:20px;
+			}
+			.item4{
+			border:1px solid black;
+			padding:0px;
+			margin:5px;
+			flex:1;
+			margin:0px 40px 20px 30px;
+			}
+			.child7{
+			background-image:linear-gradient(to right,purple,blue);
+			padding:10px;
+			color:white;
+			}
+			.child8{
+			border-bottom:1px solid black;
+			margin-top:20px;
+			}
+			.item5{
+			border:1px solid black;
+			margin:5px;
+			flex:1;
+			margin:0px 40px 20px 30px;
+			}
+			.child10{
+			background-image:linear-gradient(to right,blue,yellow);
+			padding:10px;
+			color:white;
+			}
+			.child11{
+			border-bottom:1px solid black;
+			margin-top:20px;
+			}
+			.middle-down{
+			width:100%;
+			height:350px;
+			padding:20px 0px 0px 0px ;
+			display:flex;
+			}
+			.item6{
+			border:1px solid black;
+			margin:5px;
+			flex:1;
+			margin:0px 40px 20px 30px;
+			}
+		    .child13{
+			  background-image:linear-gradient(to right,red,yellow);
+			  padding:10px;
+			  color:white;
+			}
+			.child14{
+			border-bottom:1px solid black;
+			margin-top:20px;
+			}
+			.item7{
+			border:1px solid black;
+			margin:5px;
+			flex:1;
+			margin:0px 40px 20px 25px;
+			}
+			.child16{
+			background-image:linear-gradient(to right,purple,green);
+			padding:10px;
+			color:white;
+			}
+			.child17{
+			border-bottom:1px solid black;
+			margin-top:20px;
+			}
+			.item8{
+			border:1px solid black;
+			margin:5px;
+			flex:1;
+			margin:0px 40px 20px 25px;
+			}
+			.child19{
+			background-image:linear-gradient(to right,green,red);
+			padding:10px;
+			color:white;
+			}
+			.child20{
+			border-bottom:1px solid black;
+			margin-top:20px;
+			}
+			.item9{
+			border:1px solid black;
+			margin:5px;
+			flex:1;
+			margin:0px 40px 20px 25px;
+			}
+			.child22{
+			background-image:linear-gradient(to right,gray,yellow);
+			padding:10px;
+			color:white;
+			}
+			.child23{
+			border-bottom:1px solid black;
+			margin-top:20px;
+			}
+			.middle-right{
+			width:100%;
+			height:320px;
+			display:flex;
+			}
+			.item10{
+			border:1px solid black;
+			margin:5px;
+			flex:1;
+			margin:0px 40px 20px 25px;
+			}
+			.child-1{
+			background-image:linear-gradient(to right,yellow,orange);
+			padding:10px;
+			color:white;
+			}
+			.child-2{
+			border-bottom:1px solid black;
+			padding:10px;
+			}
+			.item11{
+			border:1px solid black;
+			margin:5px;
+			flex:1;
+			margin:0px 40px 20px 25px;
+			}
+			.child-4{
+			background-image:linear-gradient(to right,blue,navy);
+			padding:10px;
+			color:white;
+			}
+			.child-5{
+			border-bottom:1px solid black;
+			padding:10px;
+			}
+			.item12{
+			border:1px solid black;
+			margin:5px;
+			flex:1;
+			margin:0px 40px 20px 25px;
+			}
+			.child-7{
+			background-image:linear-gradient(to right,green,orange);
+			padding:10px;
+			color:white;
+			}
+			.child-8{
+			border-bottom:1px solid black;
+			padding:10px;
+			}
+			.item13{
+			border:1px solid black;
+			margin:5px;
+			flex:1;
+			margin:0px 40px 20px 25px;
+			}
+			.child-10{
+			background-image:linear-gradient(to right,orange,red);
+			padding:10px;
+			color:white;
+			}
+			.child-11{
+			border-bottom:1px solid black;
+			padding:10px;		
+			}
+			.item14{
+			width:700px;
+			height:500px;
+			margin-left:200px;
+			
+			}
+			.middle-reviews{
+			width:1000px;
+			height:350px;
+			display:flex;
+			margin-left:200px;
+			}
+			.item-1{
+			border:1px solid black;
+			height:320px;
+			width:300px;
+			flex:1;
+			margin:20px;
+			}
+			.child--1{
+			background-image:linear-gradient(to right,red,yellow);
+			padding:10px;
+			height:100px;
+			border-bottom:1px solid black;
+			
+			}
+			.item-2{
+			border:1px solid black;
+			height:320px;
+			width:300px;
+			flex:1;
+			margin:20px;
+			}
+	         .child--4{
+			  background-image:linear-gradient(to right,blue,red);
+			  padding:10px;
+			  height:100px;
+			  border-bottom:1px solid black;
+			}
+			.item-3{
+			border:1px solid black;
+			height:320px;
+			width:300px;
+			flex:1;
+			margin:20px;
+			}
+	         .child--7{
+			  background-image:linear-gradient(to right,green,orange);
+			  padding:10px;
+			  height:100px;
+			  border-bottom:1px solid black;
+			  }
+			.flop{
+			border:1px solid black;
+			width:100%;
+			height:200px;
+			background-image:linear-gradient(to right,purple,blue);
+			}
+			#manage{
+			font-size:20px;
+			margin-left:300px;
+			margin-top:80px;
+			color:white;
+			}
+			#manage1{
+			padding:10px;
+			margin-left:650px;
+			border-radius:10px;
+			background-color:green;
+			color:white;
+			}
+			.manage3{
+			border:1px solid black;
+			width:100%;
+			height:300px;
+			display:flex;
+			padding:10px;
+			}
+			.item-4{
+			background-color:green;
+			flex:1;
+			margin:20px;
+			}
+			.item-5{
+			background-color:red;
+			flex:1;
+			margin:20px;
+			}
+			.item-6{
+			background-color:orange;
+			flex:1;
+			margin:20px;
+			}
+			.item-7{
+			background-color:blue;
+			flex:1;
+			margin:20px 20px 20px 50px;
+			}
+			.manage-4{
+		     border:1px solid black;
+			 width:100%;
+			 height:300px;
+			 background-image:url('./choose/noob.png');
+			}
+			.manage-5{
+			 display:flex;
+			 width:100%;
+			 height:130px;
+			 padding:10px;
+			}
+			.item-8{
+			background-color:white;
+			flex:1;
+			margin:0px 10px 0px 10px ;
+			}
+			.item-9{
+			background-color:white;
+			flex:1;
+			margin:0px 10px 0px 10px ;
+			}
+			.item-10{
+			background-color:white;
+			flex:1;
+			margin:0px 10px 0px 10px ;
+			}
+			.item-11{
+			background-color:white;
+			flex:1;
+			margin:0px 10px 0px 10px ;
+			}
+            .manage-6{
+			border:1px solid black;
+			width:1500px;
+			height:200px;
+			margin:5px;
+			display:flex;
+			}
+            .item-12{
+			border:1px solid black;
+			background-color:green;
+			width:340px;
+			height:190px;
+			margin:10px;
+			margin-left:60px;
+			}
+            .item-13{
+			border:1px solid black;
+			background-color:red;
+			width:340px;
+			height:190px;
+			margin:10px;
+			}			
+            .item-14{
+			border:1px solid black;
+			background-color:orange;
+			width:340px;
+			height:190px;
+			margin:10px;
+			}			
+            .item-15{
+			border:1px solid black;
+			background-color:blue;
+			width:340px;
+			height:190px;
+			margin:10px;
+			}
+            .manage-7{
+			border:1px solid black;
+			width:1500px;
+			height:200px;
+			margin:5px;
+			display:flex;
+			}
+            .item-16{
+			border:1px solid black;
+			background-color:green;
+			width:340px;
+			height:190px;
+			margin:10px;
+			margin-left:60px;
+			}
+            .item-17{
+			border:1px solid black;
+			background-color:red;
+			width:340px;
+			height:190px;
+			margin:10px;
+			}			
+            .item-18{
+			border:1px solid black;
+			background-color:orange;
+			width:340px;
+			height:190px;
+			margin:10px;
+			}			
+            .item-19{
+			border:1px solid black;
+			background-color:blue;
+			width:340px;
+			height:190px;
+			margin:10px;
+			}
+            .manage-8{
+			border:1px solid black;
+			width:1500px;
+			height:200px;
+			margin:5px;
+			display:flex;
+			}
+            .item-20{
+			border:1px solid black;
+			background-color:green;
+			width:300px;
+			height:190px;
+			margin:10px;
+			margin-left:60px;
+			}
+            .item-21{
+			border:1px solid black;
+			background-color:red;
+			width:340px;
+			height:190px;
+			margin:10px;
+			}			
+            .item-22{
+			border:1px solid black;
+			background-color:orange;
+			width:340px;
+			height:190px;
+			margin:10px;
+			}			
+            .item-23{
+			border:1px solid black;
+			background-color:blue;
+			width:300px;
+			height:190px;
+			margin:10px;
+			}
+            .manage-9{
+			margin-left:400px;
+			}
+            .manage-11{
+			display:flex;
+			}
+			.item-24{
+			background-color:red;
+			height:120px;
+			width:500px;
+			margin:10px 0px 0px 250px;
+			}
+			.item-25{
+			background-color:green;
+			height:120px;
+			width:500px;
+			margin-left:10px;
+			margin:10px;
+			}
+			.manage-12{
+			display:flex;
+			}
+			.item-26{
+			background-color:red;
+			height:120px;
+			width:500px;
+			margin:10px 0px 0px 250px;
+			}
+			.item-27{
+			background-color:green;
+			height:120px;
+			width:500px;
+			margin-left:10px;
+			margin:10px;
+			}
+			 .manage-13{
+			display:flex;
+			}
+			.item-28{
+			background-color:red;
+			height:120px;
+			width:500px;
+			margin-left:250px;
+			margin:10px 0px 0px 250px;
+			}
+			.item-29{
+			background-color:green;
+			height:120px;
+			width:500px;
+			margin-left:10px;
+			margin:10px;
+			}
+			.manage-14{
+			border:1px solid black;
+			width:100%;
+			height:200px;
+			background-color:black;
+			}
+			.manage-15{
+			width:auto;
+			height:300px;
+			margin-left:50px;
+			}
+			.know{
+			border:1px solid black;
+			width:100%;
+			height:auto;
+			background-color:blue;
+			}
+			.know1{
+			height:auto;
+			margin-left:400px;
+			font-size:20px;
+			}
+			.know2{
+			width:1000px;
+			height:auto;
+			border:1px solid white;
+			margin-left:300px;
+			color:white;
+			}
+			.know4{
+			 width:100%;
+			 height:auto;
+			 background-color:green;
+			}
+             .know6{
+			 border:1px solid black;
+			 width:1100px;
+			 height:500px;
+			 margin-left:250px;
+			 display:flex;
+			 }
+			 .know-1{
+			 width:350px;
+			 height:250px;
+			 flex:1;
+			 margin:20px;
+			 }
+			 .know-2{
+			 width:350px;
+			 height:250px;
+			 flex:1;
+			 margin:20px;
+	
+			 }
+			.footer{
+			border:1px solid black;
+			width:100%;
+			height:auto;
+			display:flex;
+			}
+			.footer1{
+			background-color:black;
+			flex:1;
+			}
+			.footer2{
+			background-color:black;
+			flex:1;
+			}
+			.footer3{
+			background-color:black;
+			flex:1;
+			}
+			.footer4{
+			background-color:black;
+			flex:1;
+			}
+			.devlopment-course{
+			color:white;
+			margin-left:700px;
+			font-size:60px;
+			margin-top:120px;
+			}
+			
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="item">
+                   <img src="./Choose/logo.png" alt="logo"/>
+                </div>
+                <div class="item1">
+                    <div class="nav">
+                    <ul>
+                        <li><a href="corporate training.html" target="blank">Corporate Training</a></li>
+                        <li><a href="placements.html" target="blank">Placements</a></li>
+                        <li><a href="internship.html" target="blank">Internship</a></li>
+                        <li><a href="reviews.html" target="blank">Reviews</a></li>
+                        <li><a href="blog.html" target="blank">Blog</a></li>
+                    </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="middle">
+			  <button class="middle-top">EXPLORE COURSE</button>
+			  <h1 class="devlopment-course">Web Devlopment course</h1>
+			<div class="middle-middle">
+			<div class="img1">
+			<div class="img8">
+			 <p>BECOME A </P>
+			 <P>UI DEVLOPER</P>
+			 </div>
+			</div>
+			<div class="img2">
+			<div class="img8">
+			  <p>BECOME A </P>
+			 <P>ANGULARE DEVLOPER</P>
+			 </div>
+			</div>
+			<div class="img3">
+			<div class="img8">
+			  <p>BECOME A </P>
+			 <P>REACT JS DEVLOPER</P>
+			 </div>
+			</div>
+			</div>
+			</div>
+			<div>
+			<h1 style="padding:40px 60px 40px 40px;">TRENDING COURSES</h1>
+			</div>
+			<div class="middle-left">
+			   <div class="item2">
+			   <div class="child1">
+			  <h2 style="margin-left:70px;">ANGULAR <br/>DEVLOPMENT<br/> COURSE</h2>
+               </div>
+			   <div class="child2">
+			   <p>Angular is popular for making dynamic applications and
+			   its information official and reliance infusion includes altogether lesse...</p>
+			   </div>
+			   <div class="child3">reviews</div>
+			   </div>
+			<div class="item3">
+			    <div class="child4">
+			   <h2 style="margin-left:70px;">REACT<br/>DEVLOPMENT<br/>COURSE</h2>
+			   </div>
+			   <div class="child5">
+			   <p>Achievers IT react js certification course in bangalore.We teach you
+			   detailed explanations of jsx,undirectional dat...</p>
+			   </div>
+			   <div class="child6">reviews</div>
+			   </div>
+			<div class="item4">
+			  <div class="child7">
+			  <h2 style="margin-left:70px;">MEAN STACK<br/>DEVLOPMENT<br/> COURSE</h2>
+			  </div>
+			  <div class="child8">
+			  <p>"MEAN Stack front to back". In this course we wiil be build an in depth full stack social 
+			  network applications using Angular express...</p>
+			   </div>
+			   <div class="child9">reviews</div>
+		    </div>
+			<div class="item5">
+			   <div class="child10">
+			   <h2 style="margin-left:70px;">MERN STACK<br/> DEVLOPMENT<br/> COURSE</h2>
+			   </div>
+			   <div class="child11">
+			   <p>"MEAN Stack front to back". In this course we wiil be build an in depth full stack social 
+			       network applications using Nodes.js, express...</p>
+			   </div>
+			   <div class="child12">reviews</div>
+			   </div>
+			</div>
+			<div class="middle-down">
+			<div class="item6">
+			   <div class="child13">
+			   <h2 style="margin-left:70px;">WEB<br/>DEVLOPMENT<br/>COURSE</h2>
+			   </div>
+			   <div class="child14">
+			   <P>With AchieversIT's UI devlopment course in bangalore, you will be able to master the 
+			   concepts such as css3,css,HTML..</P>
+			   </div>
+			   <div class="child15">reviews</div>
+			</div>
+			<div class="item7">
+			   <div class="child16">
+			   <h2 style="margin-left:90px;">DIGITAL<br/>MARKETING<br/>COURSE</h2>
+			   </div>
+			   <div class="child17">
+			   <P>The future for ditital marketing is promising, and its scope in the upcoming future is
+			   that it may replace all oth...</P>
+			   </div>
+			   <div class="child18">reviews</div>
+			</div>
+			<div class="item8">
+			   <div class="child19">
+			   <h2 style="margin-left:70px;">REACT NATIVE<br/>DEVLOPMENT<br/> COURSE</h2>
+			   </div>
+			   <div class="child20">
+			   <P>Full stack devlopment is defined as the devlopment of both the front end and
+                dack end sides of a web application.A ful...</P>
+				</div>
+				<div class="child21">reviews</div>
+			</div>
+			<div class="item9">
+			   <div class="child22">
+			   <h2 style="margin-left:70px;">IONIC<br/>DEVLOPMENT<br/>COURSE</h2>
+			   </div>
+			   <div class="child23">
+			   <P>IONIC 4& ionic 5 that you can immediately implement to build high quality apps. Our
+			   course covers a wide variety of topics fro...</P>
+			</div>
+			<div class="child24">Reviews</div>
+			</div>
+			</div>
+			<div CLASS="middle-">
+			  <h1 style="padding:10px 60px 40px 40px;">RECENT ADDITIONS</h1>
+			  </div>
+			 <div class="middle-right">
+			  <div class="item10">
+			    <div class="child-1">
+			   <h2 style="margin-left:70px;">UI<br/> DEVLOPMENT<br/>COURSE</h2>
+			   </div>
+			   <div class="child-2">
+			     <p>UI devlopment course in bangalore you will be able to master the concepts such as
+				 CSS3,CSS,HTML,JAVASCRIPT,BOOTSTRA...</p>
+				 </div>
+				 <div class="child-3">reviews</div>
+			  </div>
+			  <div class="item11">
+			    <div class="child-4">
+			    <h2 style="margin-left:70px;">VUEJS<br/>DEVLOPMENT<br/>COURSE</h2>
+				</div>
+				<div class="child-5">
+				 <p>VUEJS framework that is gaining a reputation as being a lightweight alternative 
+				 to different framework an...</p>
+				 </div>
+				 <div class="child-6">reviews</div>
+			  </div>
+			  <div class="item12">
+			    <div class="child-7">
+			    <h2 style="margin-left:70px;">WORDPRESS<br/>DEVLOPMENT<br/>COURSE</h2>
+				</div>
+				<div class="child-8">
+				 <p>Wordpress certification training course in bangalore is one of the best training 
+				 programs by well-experienced software...</p>
+				 </div>
+				 <div class="child-9">reviews</div>
+			  </div>
+			  <div class="item13">
+			    <div class="child-10">
+			    <h2 style="margin-left:70px;">PYTHON<br/>DEVLOPMENT<br/>COURSE</h2>
+				</div>
+				<div class="child-11">
+				 <p>Big data, machine learning and data science using python programming 
+				 cetification course authorise every one t...</p>
+				 </div>
+				 <div class="child-12">reviews</div>
+			  </div>
+			</div>
+			<div class="middle-red">
+			<div>
+			<h2 style="padding:0px 0px 0px 40px;">Discover Top Categories</h2>
+			</div>
+			</div>
+			<div class="item14">
+			  <img src="./choose/dev.png" alt="logo" />
+			</div>	
+			<div>
+			<h1 style="margin-left:50px;margin-bottom:10px;">Reviews</h1>
+			</div>
+			<div class="middle-reviews">
+			<div class="item-1">
+			  <div class="child--1">
+			    <div>
+			    <h1 style="font-size:50px;margin-top:10px;position:absolute;">M</h1>
+				</div>
+				<div>
+				<h3 style="position:relative; margin-left:120px;margin-top:40px; color:white;">MALLIKA M</h3>
+				</div>
+			  </div>
+			  <div class="child--2">
+			    <h3>Angular Certification TrainingI</h3>
+			  </div>
+			  <div class="child--3">
+			    <p style="padding:30px 0px 30px 0px ;"> I had recently attended the Angular js Training in AchieversIT,
+				I must say they were outstanding.</p>
+			  </div>
+			</div>
+			<div class="item-2">
+			  <div class="child--4">
+			  <h1 style="font-size:50px;margin-top:10px;position:absolute;">A</h1>
+			  <h3 style="position:relative; margin-left:100px;margin-top:40px; color:white;">ASHISH SHEKAR</h3>
+			  </div>
+			  <div class="child--5">
+		         	 <h3> ReactJS Certification Training</h3>
+					  </div>
+			  <div class="child--6">
+			       <p style="padding:30px 0px 30px 0px ;">I enrolled for Angular and React js training session conducted by AchieversIT ,It was
+				   a great learning experience and wonderful training sessions From Mr Murali and Muniraj.</p> 
+			  </div>
+			</div>
+			<div class="item-3">
+			<div class="child--7">
+			  <h1 style="font-size:50px;margin-top:10px;position:absolute;">D</h1>
+			  <h3 style="position:relative; margin-left:100px;margin-top:40px; color:white;">DWARAK REDDY</h3>
+			</div>
+			  <div class="child--8">
+			  <h3>UI & Angular Certification Training</h3></div>
+			  <div class="child--9">
+			    <p style="padding:30px 0px 30px 0px ;"> Hi,I am Dwaraka from BTech(Mechanical) background looking out for UI Development with Angular , 
+				node and Mysql.</p>
+			  </div>
+			</div>
+		</div>
+		<div><h3 style="margin-left:600px; padding:40px;">VIEW ALL REVIEWS </h3></div>
+		<div class="flop">
+		<p id="manage">Enroll, Learn, Grow, Repeat! Get ready to achieve your learning goals
+			with Acheivers IT</p>
+			<button id="manage1">Contact Us</button>
+		</div>
+		<div>
+		     <h2 style="padding:20px; margin-top:30px;">Acheivers It Edge</h2>
+		    </div>
+			<div class="manage3">
+			 <div class="item-4">
+			   <h2 style="margin-top:100px;">Real Time Doubt Resolution</h2>
+			   <p style="padding:0px 20px 20px 60px;font-size:20px;">with live instructors</p>
+			 </div>
+			 <div class="item-5">
+			   	<h2 style="margin-top:100px;">Real Time Doubt Resolution</h2>
+			   <p style="padding:0px 20px 20px 60px;font-size:20px;">with live instructors</p>
+			 </div>
+			 <div class="item-6">
+			   <h1 style="margin-left:100px; font-size:40px;">24/7</h1>
+			   	<h2 style="margin-top:50px;">Real Time Doubt Resolution</h2>
+			   <p style="padding:0px 20px 20px 60px;font-size:20px;">with live instructors</p>
+
+			 </div>
+			 <div class="item-7">
+			     <h2 style="margin-top:100px;">Real Time Doubt Resolution</h2>
+			   <p style="padding:0px 20px 20px 60px;font-size:20px;">with live instructors</p>
+			 </div>
+             </div>	
+            <div class="manage-4">
+			<div>
+			<h2 style="margin-left:600px;font-size:40px;color:white;">Why We Are On Top1</h2>
+			<p style="margin-left:300px; font-size:20px;">More people train with AcheiversIT because of ourcommitment to quality, Placement
+			Support, and Real-time Training.</p>
+			<div class="manage-5">
+			<div class="item-8">
+			<h1 style="font-size:45px; margin-left:120px;">135 +</h1>
+			<p style="margin-left:80px;">TRENDING COURSES </p>
+			</div>
+		    <div class="item-9">
+			<h1 style="margin-left:130px; font-size:45px;">60 +</h1>
+			<p style="margin-top:0px;">It Companies are tied-up to hire our trained students</p>
+			</div>
+			<div class="item-10">
+			<h1 style="margin-left:130px; font-size:40px;">25 +</h1>
+			<p>Students attend interviews every day through our placements cell</p>
+			</div>
+			<div class="item-11">
+			<h1 style="margin-left:130px;font-size:40px;">3 +</h1>
+			<p style="margin-top:0px;">Of our students Get jobs every day in Bangalore and india</p>
+			</div>
+			</div>			 
+		</div>
+	  </div>
+	  <div>
+	  <h1 style="padding:30px;">Our Trainer Form</h1>
+	  </div>
+	  <div class="manage-6">
+	  <div class="item-12">
+	  <img src="./choose/congnizant1.png" alt="logo" />
+	  </div>
+	  <div class="item-13"><img src="./choose/hcl1.png" alt="logo" /></div>
+	  <div class="item-14"><img src="./choose/infosys1.png" alt="logo" /></div>
+	  <div class="item-15"><img src="./choose/accenture1.png" alt="logo" /></div>
+	  </div>
+	  	  <div class="manage-7">
+	  <div class="item-16"><img src="./choose/oracle1.png" alt="logo" /></div>
+	  <div class="item-17"><img src="./choose/ibm1.png" alt="logo" /></div>
+	  <div class="item-18"><img src="./choose/amazon1.png" alt="logo" /></div>
+	  <div class="item-19"><img src="./choose/visa1.png" alt="logo" /></div>
+	  </div>
+	  <div class="manage-8">
+	  <div class="item-20"><img src="./choose/wipro1.png" alt="logo" /></div>
+	  <div class="item-21"><img src="./choose/flipkart1.png" alt="logo" /></div>
+	  <div class="item-22"><img src="./choose/dell1.png" alt="logo" /></div>
+	  <div class="item-23"><img src="./choose/genpact1.png" alt="logo" /></div>
+	  </div>
+	  <div>
+	  <h1>AcheiversIt Process</h1>
+	  </div>
+	  <div class="manage-9">
+	  <img src="./choose/Process.jpg" />
+	  </div>
+	  <div> <h1 style="margin-left:40px;">latest jod openings</h1></div>
+	  <div class="manage-11">
+	  <div class="item-24"><h2>Front End Developer-Angular js,Nodejs</h2>
+	  <p>location:Bangalore</p></div>
+	  <div class="item-25"><h2>Senior Software Engineer-Java FUll Stock Developer</h2>
+	  <p>location:Bangalore</p></div>
+      </div>
+	  	  <div class="manage-12">
+	  <div class="item-26"><h2>UI Developer-Angularjs Frameworks</h2>
+	  <p>location:Bangalore</p></div>
+	  <div class="item-27"><h2>Python Developers(Fresher)Requirement</h2>
+	  <p>location:Bangalore</p></div>
+	  </div>
+	  <div class="manage-13">
+	  <div class="item-28"><h2>UI UX Designer/Developer</h2>
+	  <p>location:Bangalore</p></div>
+	  <div class="item-29"><h2>.Net Senior Developer-5positions</h2>
+	  <p>location:Bangalore</p></div>
+      </div>
+	  <div class="manage-14">
+	  <div><h3 style="color:white;">Acheivers IT!for businees</h3></div>
+	  <div><h3 style="color:white;">No more dull edges in your company.Make your employees into masters....
+        </h3></div>
+	  <div><h3 style="color:white;">Nurture talent with instructor-led courses on trending technologies </h3></div>
+	  <button>Business Contact</button>
+	  </div>
+	  <div>
+	  <h2 style="margin-left:30px;">Our Corporate Clients</h2>
+	  </div>
+	  <div class="manage-15">
+	  <img src="./choose/screenshot.png" alt="logo"/>
+	  </div>
+	  <div class="know">
+	     <div class="know1"><h1>KNOW US BETTER FOR YOUR FUTURE ! </h1></div>
+			<div class="know2">
+		<div>
+			<h3>We, AchieversIT are here to assist you in gaining the best deal of knowledge and landing at
+			your dream job. Fresher or experienced, we always have a hope to hop into new domains and fields 
+			to quicken up the pace in our career growth. AchieversIT isdedicated to its services to enhance your
+			skills to make a better move towards a better future in your career</h3>
+		</div>
+		  <div>
+		  <h3>AchieversIT has been delivering outstanding quality training in IT sector courses. 8 years of experience
+		  in furnishingqualitative training, AchieversIT has gained its own fame in leading an individual
+		  to land at their dream job.</h3>
+		  </div>
+		  <div>
+		  <h3>Are you looking out for a job or job switch? Despite the fact that your background relates to technical or
+		  non-technical, you can always find a choice for you with us. AchieversIT is your best training partner to help 
+		  you move forward in your career with confidence and ample amount of knowledge. AchieversIT provides different 
+		  trainings to <br/>boost up your vocation, namely :</h3>
+		  </div>
+		  <ol>
+		  <li style="font-size:20px;">Frent-End-Course</li>
+		  User Interface Development ; Web Interface Development ; Angular Training ; ReactJS Development ;
+		  VueJS Development ;  BootStrap Development ; Material Development.
+		  <ul>
+		  <li>AchieversIT can be listed out as the best UI Development training centre, whereas locates UI Development
+		  training in Bangalore ; UI Development training in Marathahalli ; also benefits as UI training online and UI
+		  Developer training.</li>
+		  <li>AchieversIT stands out as the best Angular Development training centre, whereas locates Angular Development
+		  training in Bangalore ; Angular training in Marathahalli; also benefits as Angular training online and Angular
+		  online training. Also the courses come with variations like Angular UI Bootstrap ; AngularJS UI Bootstrap ;
+		  Angular JavaScript ; JavaScript AngularJS.</li>
+		  <li>AchieversIT is stated as the best ReactJS training centre, whereas locates ReactJS training in Bangalore ;
+		  ReactJS development training in Bangalore; React training in BTM; ReactJS training in Marathahalli; also benefits
+		  as ReactJS training online and ReactJS online training ; React training ; React native training.</li>
+		  </ul>
+		  <li>Back-end-Courses:</li>
+		    Microsoft.NET ; PHP ; Python ; Ruby ; Java
+		  <li>Mobile Development Courses :</li>
+           Android App Development ; IOS App App Development ; Windows App Development ; Hybrid App Development.
+          <li>Full Stack Development Courses :</li>
+            Java Full Stack Training ; Net Full Stack Training ; Node.JS Full Stack Training ; PHP Full Stack Training ; 
+            MEAN Full Stack Training ; MERN Full Stack Training.
+          <li>Digital Marketing Courses :</li>
+            Digital Marketing ; Affiliate Marketing ; Email Marketing ; Google Analytics ; Lead Generation ; Remarketing ; 
+			Search Engine Optimization ; SMS Marketing ; Social Media Marketing ; WordPress.
+          <li>Database Programming Courses :</li>
+             MySQL Training ; Oracle Training ; Mongo DB Training ; NoSQL Training ; PostgreSQL Training.
+            <li>Project Management Courses :</li>
+            Prince2 Training ; PMP Training ; Six Sigma Training
+		  </ol>
+		  <h2>Apart from imparting skills and knowledge, AchieversIT comes up with flexible modes of Training :</h2>
+		  <ol>
+		  <li>Classroom Training in Bangalore</li>
+            <li>Live Virtual Training with Instructor-Led Sessions</li>
+             <li>Self-Study (e-Learning)</li>
+		  </ol>
+		  <h2>You can choose your mode of training according to your comfort and achieve your courses with
+		  certifications.</h2>
+		  <h2>Perks and advantages of learning with AchieversIT :</h2>
+		  <ol>
+		 <li>90 hours of training</li>
+          <li>Reasonable course fees</li>
+             <li>200 hours of lab practical sessions under experts’ mentorship</li>
+             <li>Hands-on experience with case studies with real-time examples</li>
+              <li>24*7 access and support by the team</li>
+              <li>Industry experts & Certified trainers</li>
+               <li>100% placement support</li>
+               <li>Industry-aligned curriculum with current market trends and needs</li>
+                <li>Extra hours of inputs for non-technical individuals</li>
+                <li>Flexible mode of learning</li>
+		  </ol>
+		  <h2>You get to attend JOB-Oriented training with real-time knowledge and live
+		  projects which comes at an affordable price with effective Instructor-led sessions.<h2>
+		  
+		  <p>We, at AchieversIT strive to deliver our best efforts; and concentrate and help you in
+		  achieving your dream job you always wished for. We are dedicated to deliver excellence and impart
+		  knowledge to the individuals aspiring a career in not only IT sectors but also in various other fields
+		  like Digital Marketing, Project Management etc. Our curriculum for all the courses is reviewed systematically
+		  to keep our candidates at the cutting edges of technologies.</p>
+		  <div class="know4">
+		  <h1>Impressed by Us? Enroll Now</h1>
+		  <p>Structure your learning and get a certificate to prove it.</p>
+		  <form>
+		  <lable>email</lable><br/>
+		  <input type="Email" name="email" placeholder="email">
+		  <div>
+		  <lable>contact</lable><br/>
+		  <input type="tel" name="phone number" placeholder="contact">
+		  </div>
+		  </form>
+	 </div>
+	 </div>
+	 </div>
+	 <div class="know5">
+	     <h1 style="padding:20px;margin-left:600px;">Locations</h1>
+		 <h2 style="margin-left:300px;">Come and discuss with us about your goals ,We transform your goals into success!!!</h2> 
+	 </div>
+	 <div class="know6">
+     <div class="know-1">
+	    <img src="./choose/btm1.jpg" alt="logo"/>
+		<h1 style="padding-left:70px;">BTM Layout - Bangalore</h1>
+   <h4> #63, 1st Floor, 16th Main, 8th Cross BTM 1st Stage,<br/> BTM Layout, Bengaluru, Karnataka 560029</h4>
+   <a href="https://www.google.com/maps/place/AchieversIT/@12.9198345,77.610439,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1548e290313f:
+   0xfaf25026cfa3458d!8m2!3d12.9198345!4d77.610439!16s%2Fg%2F11gmfx_hfn?entry=ttu" target="blank">loctions<a/>
+	 </div>
+     <div class="know-2">
+	 <img src="./choose/hyd2.png" alt="logo" />
+	<h2 style="padding-left:70px;"> Marathahalli - Bangalore</h2>
+<h4>#1, 4th Main Rd, Extension, Ayyappa Layout, Chandra Layout,<br/> Marathahalli, Bengaluru, Karnataka 560037</h4>
+<a href="https://www.google.com/maps/place/AchieversIT/@12.9534679,77.7022456,17z/data=!3m1!4b1!4m6!3m5!1s0x3bae1359f187ff7f:0x24c3decd3581f625!
+8m2!3d12.9534627!4d77.7044343!16s%2Fg%2F11ry39lsvp?coh=164777&entry=tt&shorturl=1"target="blank">locations</a>
+	 </div>	 
+	 </div>
+	  <div class="footer">
+	  <div class="footer1">
+	  <img src="./choose/logo.png" alt="logo" />
+	  <p style="color:white;">AchieversIT - Provides a wide group of opportunities for freshers and Experienced candidate who
+	   can develop their skills and build their career opportunities across multiple Companies</p>
+	  </div>
+	   <div class="footer2">
+	   <h1 style="color:white; margin-left:70px;">company</h1>
+	   <ul style="color:white; margin-left:80px; list-style-type: none;">
+	      <li>Home</li>
+	      <li>Placements</li> 
+	      <li>Corporate Training</li> 
+	      <li>Contact Us</li> 		  
+	   </ul>
+	   </div>
+	    <div class="footer3">
+		<h1 style="color:white;">TRENDING COURSES</h1>
+		<ul style="color:white;list-style-type: none;">
+		        <li>Ui Development Course</li>
+				<li>Angular Js Course</li>
+				<li>React Js Course</li>
+				<li>Digital marketing Course</li>
+				<li>python Course</li>
+		
+		</ul>
+		</div>
+		 <div class="footer4">
+		 <h1 style="color:white;">CONTACT INFO</h1>
+		 <ul style="color:white; list-style-type: none;"> 
+		 <li>#63, 1st Floor, 16th Main, 8th Cross,BTM 1st Stage, Bangalore, India - 
+		 560029</li>
+		  <li>India : +91 8431-040-457</li>
+		 <li>info@achieversit.com</li>
+		 </ul>
+		 </div>
+	  
+	  </div>
+  </div>	
+    </body>
+</html>
